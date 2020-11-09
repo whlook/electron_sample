@@ -1,0 +1,66 @@
+
+.input-pos{
+	position:absolute;
+	bottom:100px;
+	left:1350px;
+}
+
+div form {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  font-family: Sans-serif;
+  color: white;
+}
+
+div form input {
+  height: 3.5rem;
+  width: 10rem;
+  padding-top: 1rem;
+  border: none;
+  border-bottom: 0.2rem solid white;
+  outline: none;
+  background:transparent;
+  font-family: Sans-serif;
+  font-size: 1.3rem;
+  color: white;
+}
+
+div form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+div form label::after {
+  content: "";
+  height: 4.5rem;
+  width: 11rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 0.4rem solid yellow;
+  transform: translateX(-100%);
+  transition: all 0.2s ease;
+}
+
+div form label span {
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+div form input:focus + label span,
+div form input:valid + label span {
+  transform: translateY(-130%);
+  font-size: 1.3rem;
+  color: yellow;
+}
+
+div form input:focus + label::after,
+div form input:valid + label::after {
+  transform: translateX(0);
+}
+

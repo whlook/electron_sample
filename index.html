@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>action</title>
+    <script src="./common/common.js"></script>
+    <link rel="stylesheet"  href="./style.css">
+    <link rel="stylesheet" type="text/css" href="common/funtext.css">
+    <link rel="stylesheet" type="text/css" href="common/startbtn.css">
+    <link rel="stylesheet" type="text/css" href="common/nameinput.css">
+    <script src="./renderer.js"></script>
+  </head>
+  <body>
+	 <audio src="./resource/home.wav" loop="loop" autoplay="autoplay"></audio>
+	  <div>
+	  	<div style="font-size:2rem;color:white;position:absolute;top:100px;left:200px;">
+			难度1
+		</div>
+
+	  	<div style="position:absolute;top:150px;left:100px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:350px;left:100px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:550px;left:100px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+	  </div>
+
+ 	<div>
+	  	<div style="font-size:2rem;color:white;position:absolute;top:100px;left:550px;">
+			难度2
+		</div>
+
+	  	<div style="position:absolute;top:150px;left:450px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:350px;left:450px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:550px;left:450px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+	  </div>
+
+ 	<div>
+	  	<div style="font-size:2rem;color:white;position:absolute;top:100px;left:900px;">
+			难度3
+		</div>
+
+	  	<div style="position:absolute;top:150px;left:800px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:350px;left:800px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:550px;left:800px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+	  </div>
+
+
+ 	<div>
+	  	<div style="font-size:2rem;color:white;position:absolute;top:100px;left:1250px;">
+			难度4
+		</div>
+
+	  	<div style="position:absolute;top:150px;left:1150px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:350px;left:1150px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:550px;left:1150px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+	  </div>
+
+
+ 	<div>
+	  	<div style="font-size:2rem;color:white;position:absolute;top:100px;left:1600px;">
+			难度5
+		</div>
+
+	  	<div style="position:absolute;top:150px;left:1500px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:350px;left:1500px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+
+	  	<div style="position:absolute;top:550px;left:1500px;">
+	  		<video muted = "true" style="width:320px;height:240px" loop = "loop" autoplay = "autoplay" src="resource/test.mp4"></video>
+	  	</div>
+	  </div>
+
+
+	<div class="funtext">
+  		<svg>
+  		<symbol id="s-text">
+    		<text  x="0%" y="0%" dy="1em">
+		人体迷惑行为大赏机
+		</text>
+  		</symbol>  
+  		<use xlink:href="#s-text" class="text" ></use>
+  		<use xlink:href="#s-text" class="text" ></use>
+  		<use xlink:href="#s-text" class="text" ></use>
+		</svg>
+	</div>
+
+	<div class="input-pos">
+		<form>
+  		<input id = "user_name" type="text" required />
+  		<label>
+    		<span>Your&nbsp;Name</span>
+  		</label>
+		</form>
+	</div>
+
+	<div class="button-pos">
+		  <button class="button-start" onclick="start_game()"> START </button>
+	</div>
+
+  </body>
+</html>

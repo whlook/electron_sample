@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>record</title>
+    <link rel="stylesheet"  href="./record.css">
+    <link rel="stylesheet"  href="./bord.css">
+    <link rel="stylesheet"  href="./load.css">
+    <script src="./../common/common.js"></script>
+    <script src="./record.js"></script>
+  </head>
+  <body>
+	<div class="gradient-border" id="box"></div>
+	<div style="position:absolute;top:110px;left:180px;width:400px;height:864px;background-color:rgba(0,0,0,0.6);z-index:1;">
+	</div>
+	<div style="position:absolute;top:110px;left:1316px;width:400px;height:864px;background-color:rgba(0,0,0,0.6);z-index:1;">
+	</div>
+ 	<div class="video">
+	 	<video id="video" src=""></video>
+ 	</div>
+	<div id="countdown" class="cntdown mfont"></div>
+	<audio id="cntwav_321" src="../resource/321.wav"></audio>
+	<audio id="cntwav_go" src="../resource/readygo.wav"></audio>
+	<audio id="cntwav_10s" src="../resource/10s.wav"></audio>
+	<audio id="cntwav_load" src="../resource/load.wav"></audio>
+
+	<div class="loader" style="display:none">
+	<div class="loader-inner">
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+	</div>
+	</div>
+
+  </body>
+</html>

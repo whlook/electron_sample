@@ -1,0 +1,68 @@
+.button-pos{
+	position:absolute;
+	bottom:100px;
+	left:1650px;
+}
+
+.button-start{
+	position:relative;
+  	background: orangered;
+  	border: none;
+  	color: white;
+  	padding: 25px 44px;
+  	font-size: 1.4rem;
+  	outline: none;
+  	box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+}
+
+.button-start:hover {
+  background: hsl(16, 90%, 40%);
+}
+
+.button-start::before {
+  position:absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: -6px;
+  border: 6px solid transparent;
+  border-right: 6px solid hsl(16, 100%, 30%);
+  border-left-width: 0px;
+}
+
+.button-start::after {
+  position:absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  bottom: -6px;
+  right: 0;
+  border: 6px solid transparent;
+  border-top: 6px solid hsl(16, 100%, 30%);
+  border-bottom-width: 0px;
+}
+
+.button-start:active {
+  background: hsl(16, 100%, 40%);
+  top: 3px;
+  left: -3px;
+  box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+}
+
+.button-start:active::before {
+  border: 3px solid transparent;
+  border-right: 3px solid hsl(16, 100%, 30%);
+  border-left-width: 0px;
+  left: -3px;
+}
+
+.button-start:active::after {
+  border: 3px solid transparent;
+  border-top: 3px solid hsl(16, 100%, 30%);
+  border-bottom-width: 0px;
+  bottom: -3px;
+}
+

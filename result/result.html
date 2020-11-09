@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    <link rel="stylesheet"  href="./result.css">
+    <link rel="stylesheet"  href="./../common/startbtn.css">
+    <script src="./../common/common.js"></script>
+    <script src="./result.js"></script>
+  </head>
+  <body>
+	 <audio id="result_wav" src="../resource/res.wav" autoplay="autoplay"></audio>
+	  <div style="position:absolute;left:600px;top:400px;" >
+	  	<video id="uservideo" style="width:384px;height:288px" autoplay="autoplay" src=""></video>
+	  </div>
+	  <div id="username" class="scoresum" style="position:absolute;left:600px;top:404px;" >
+	  </div>
+	  <div class="scoresum" style="position:absolute;left:750px;top:400px;" >
+		  总分:
+	  </div>
+	  <div id="scoreall" class="scoresum" style="position:absolute;left:800px;top:405px;" >
+		  0
+	  </div>
+
+	  <div class="score" style="position:absolute;left:105px;top:180px;" >
+		  得分一:
+	  </div>
+	  <div id="score1" class="score" style="position:absolute;left:175px;top:185px;" >
+		  0
+	  </div>
+	  <div class="score" style="position:absolute;left:105px;top:210px;background-color:blue;z-index:1;" >
+		  &nbsp;最相似姿态&nbsp;
+	  </div>
+	  <div style="position:absolute;left:105px;top:180px;" >
+	  <video id="score1video" style="width:320px;height:240px" src=""></video>
+	  </div>
+
+	  <div class="score" style="position:absolute;left:105px;top:432px;" >
+		  得分二:
+	  </div>
+	  <div id="score2" class="score" style="position:absolute;left:175px;top:437px;" >
+		  0
+	  </div>
+	  <div class="score" style="position:absolute;left:105px;top:462px;background-color:blue;z-index:1;" >
+		  &nbsp;最相似姿态&nbsp;
+	  </div>
+	  <div style="position:absolute;left:105px;top:432px;" >
+	  <video id="score2video" style="width:320px;height:240px" src=""></video>
+	  </div>
+
+	 <div class="score" style="position:absolute;left:105px;top:700px;" >
+		  得分三:
+	  </div>
+	  <div id="score3" class="score" style="position:absolute;left:175px;top:705px;" >
+		  0
+	  </div>
+	 <div class="score" style="position:absolute;left:105px;top:730px;background-color:blue;z-index:1;" >
+		  &nbsp;最相似姿态&nbsp;
+	  </div>
+	  <div style="position:absolute;left:105px;top:700px;" >
+	  <video id="score3video" style="width:320px;height:240px" src=""></video>
+	  </div>
+
+	 <div class="toptitle" style="position:absolute;left:1500px;top:110px;" >
+		  迷惑排行榜TOP
+	  </div>
+	  <div id = "top_list">
+	  </div>
+
+	<div class="restart-pos">
+		  <button class="button-start" onclick="restart()"> RESTART </button>
+	</div>
+  </body>
+</html>

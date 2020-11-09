@@ -1,0 +1,66 @@
+/* Main styles */
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:800); */
+/* stroke: #FF575C; */
+
+.text {
+  fill: none;
+  stroke-width: 4;
+  stroke-dasharray: 0 300;
+  stroke-dashoffset: 0;
+}
+
+.text:nth-child(3n + 1) {
+    stroke: green;
+    animation: stroke 5s  ease-in-out infinite alternate forwards;  
+
+}
+.text:nth-child(3n + 2) {
+  stroke: white;
+animation: stroke1 5s  ease-in-out infinite alternate forwards;
+
+}
+
+.text:nth-child(3n + 3) {
+  stroke: yellow;
+animation: stroke2 5s  ease-in-out infinite alternate forwards;
+
+}
+
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 80 160;
+  }
+}
+
+@keyframes stroke1 {
+  100% {
+    stroke-dashoffset: 1080;
+    stroke-dasharray: 80 160;
+  }
+}
+
+
+@keyframes stroke2 {
+  100% {
+    stroke-dashoffset: 1160;
+    stroke-dasharray: 80 160;
+  }
+}
+
+.funtext{
+  background-size: .2em 100%;
+  font: 4.5em/1 Open Sans ;
+  text-transform: uppercase;
+  position: absolute;
+  bottom : 14px;
+  left: 100px;
+  width: 650px;
+}
+
+svg {
+  //position: absolute;
+  width: 100%;
+  height: 100%;
+}
